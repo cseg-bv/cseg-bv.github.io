@@ -83,6 +83,10 @@ input, select, textarea {
 		}
 
 	}
+	
+	html {
+		scroll-behavior: smooth;
+	}
 
 	html {
 		box-sizing: border-box;
@@ -2843,7 +2847,7 @@ input, select, textarea {
 			color: inherit;
 			font-weight: 900;
 			letter-spacing: 0.35em;
-			margin: 0 0 2.5em 0;
+			margin: 0 0 0 0;
 			text-decoration: none;
 			text-transform: uppercase;
 			display: inline-block;
@@ -3332,3 +3336,18 @@ input, select, textarea {
 			}
 
 		}
+
+	.grid-container {
+		display: grid;
+		/* Creates two equal columns */
+		grid-template-columns: 1fr 5fr; 
+		/* Adds space between the columns */
+		gap: 20px; 
+		align-items: top; /* Vertically centers the text next to the image */
+	  }
+
+  .grid-item img {
+		max-width: 100%; /* Ensures the image doesn't overflow its column */
+		height: auto;
+		display: block;
+	  }
